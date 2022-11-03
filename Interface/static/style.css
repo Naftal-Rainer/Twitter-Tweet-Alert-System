@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    height: 70vh;
+    /* width: 100%; */
+    background-image: url('images/login_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    background-clip: border-box;
+    background-size: cover;
+}
+
+#login-face{
+    width: 50%;
+    /* height: 95%; */
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 38%;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(6, 145, 187, 0.5);
+    /* background-color: rgb(186, 238, 238, 0.5); */
+}
+
+#login-face form label{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+#login-face form input{
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    /* background-color: rgb(105, 105, 105,0.5); */
+    /* color: white; */
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+#login-face form input[type='submit']{
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+#form-div{
+    text-align: center;
+}
+
+#login-div-statement{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(6, 145, 187);
+    padding: 10px;
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
