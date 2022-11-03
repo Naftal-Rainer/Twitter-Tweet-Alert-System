@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-}
+} */
 
 body{
-    height: 70vh;
+    /* height: 70vh; */
     /* width: 100%; */
     background-image: url('images/login_background.png');
     background-repeat: no-repeat;
@@ -17,17 +17,20 @@ body{
 
 #login-face{
     width: 50%;
-    /* height: 95%; */
     border: 2px solid white;
     border-radius: 10px;
-    margin-left: 38%;
+    margin-left: 10%;
     padding: 20px;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(6, 145, 187, 0.5);
-    /* background-color: rgb(186, 238, 238, 0.5); */
 }
 
-#login-face form label{
+#intro-text{
+    font-weight: bold;
+    /* font-size: 40px; */
+}
+
+/* #login-face form label{
     font-weight: bold;
     color: white;
     font-size: 20px;
@@ -39,8 +42,6 @@ body{
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;
-    /* background-color: rgb(105, 105, 105,0.5); */
-    /* color: white; */
     background-color: rgb(255, 255, 255, 0.6);
 }
 
@@ -52,9 +53,9 @@ body{
     color: white;
     font-size: 20px;
     border: 2px solid white;
-}
+} */
 
-#form-div{
+/* #form-div{
     text-align: center;
 }
 
@@ -64,5 +65,4 @@ body{
     background-color: rgb(6, 145, 187);
     padding: 10px;
     margin-bottom: 5px;
-    /* text-align: center; */
-}
+} */
