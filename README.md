@@ -13,3 +13,10 @@ Tweeter users typically follow multiple Twitter accounts. Keeping track of all p
 **datetime**: To grab today’s date for the Twitter date range
 
 **yagmail**: To send the email alert
+
+
+### **Interface**
+
+The login page:
+
+<img src="Interface\images\Login.jpg" alt='Demo Image' style=" width:560px ; "  >
