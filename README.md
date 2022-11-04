@@ -19,4 +19,4 @@ Tweeter users typically follow multiple Twitter accounts. Keeping track of all p
 
 The login page:
 
-<img src="Interface\images\Login.jpg" alt='Demo Image' style=" width:560px ; "  >
+<img src="https://github.com/Naftal-Rainer/Twitter-Tweet-Alert-System/blob/main/Interface/demo_images/Login.jpg" alt='Demo Image' style=" width:560px ; "  >
