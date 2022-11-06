@@ -4,6 +4,15 @@
 {% block title %}Twitter Login {% endblock %}
 
 {% block content %}
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p class='bg-success text-white p-sm-2 text-sm-center' style='position:absolute; border-radius: 10px;'>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <div id="" class="container-fluid pt-5">
 
         <div id="intro-text" class="row">
