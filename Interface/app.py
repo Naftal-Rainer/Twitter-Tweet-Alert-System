@@ -4,10 +4,16 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.secret_key = 'jkuatjuja239836'
-app.config
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.permanent_session_lifetime = timedelta(minutes=300)
 
 db = SQLAlchemy(app)
+
+
+class users(db.Model):
+    
+
 
 @app.route('/', methods = ['POST','GET'])
 def signup():
