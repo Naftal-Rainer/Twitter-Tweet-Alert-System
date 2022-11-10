@@ -1,9 +1,13 @@
 from flask import  Flask, render_template, redirect, url_for, request, session, flash
 from datetime import timedelta
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.secret_key = 'jkuatjuja239836'
+app.config
 app.permanent_session_lifetime = timedelta(minutes=300)
+
+db = SQLAlchemy(app)
 
 @app.route('/', methods = ['POST','GET'])
 def signup():
@@ -47,6 +51,17 @@ def logout():
     flash('You have been logged out','info')
     session.pop('user', None)
     return redirect(url_for('login'))
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
+
 
 if __name__ == '__main__':
     app.run(debug = True)
